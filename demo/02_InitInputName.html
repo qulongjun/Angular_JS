@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-app="">
+        <p>名字:<input type="text" ng-init="firstName='Jonh'" ></p>
+        <h1>Hello <span data-ng-bind="firstName"></span></h1>
+        <h2>{{firstName+'你好'}}</h2>
+    </div>
+
+</body>
+<script src="../js/angular.js"></script>
+</html>

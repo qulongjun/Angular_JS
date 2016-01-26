@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div ng-init="quantity=2;cost=5;">
+        <p>{{quantity*cost}}</p>
+    </div>
+    <div ng-init="firstName='张三';lastName='李四'">
+        <p>{{firstName+'和'+lastName}}</p>
+        <p ng-bind="firstName+'和'+lastName"></p>
+    </div>
+    <div ng-init="points=[1,15,19,20,100]">
+        <p>第三个值为{{points[2]}}</p>
+        <p ng-bind="'第三个值为'+points[2]"></p>
+    </div>
+</body>
+    <script src="../js/angular.js"></script>
+</html>
